@@ -1,0 +1,15 @@
+nav {
+    background: $oe-dark-navy;
+    color: white;
+}
+
+.navbar__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.hamburger-menu {
+    font-size: 22px;
+    cursor: pointer;
+}

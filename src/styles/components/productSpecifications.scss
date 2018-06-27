@@ -1,0 +1,14 @@
+.productSpecifications {
+    background: $oe-dark-navy;
+    color: white;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.productSpeicifcations__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: .5px solid $oe-navy;
+    padding: 8px 0;
+    font-size: 16px;
+}

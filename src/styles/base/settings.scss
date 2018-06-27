@@ -1,0 +1,113 @@
+// colors
+$oe-dark-navy: #030a20;
+$oe-navy: #00183c;
+$oe-light-pink: #ff71b2;
+$oe-pink: #f11176;
+$oe-blue: #36598d;
+$oe-light-blue: #758aa9;
+
+// font sizes
+$font-s: 12px;
+$font-m: 18px;
+$font-l: 32px;
+
+// breakpoints
+$tablet: 800px;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background: $oe-dark-navy;
+}  
+
+// common classes
+
+.container-l {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-m {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.btn-blue {
+    background: $oe-blue;
+    color: white;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    font-size: 24px;
+    border: none;
+}
+
+.btn-pink {
+    width: 100%;
+    color: white;
+    font-size: 31px;
+    border: solid 2px $oe-pink;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: $oe-pink;
+    background-image: linear-gradient($oe-light-pink, $oe-pink);
+    box-shadow: 0px 1px 4px -2px #333;
+}
+
+.product__link {
+    color: $oe-pink;
+    cursor: pointer;
+}
+
+.sectionTitle {
+    font-size: 25px;
+    padding: 0;
+    color: white;
+    padding-bottom: 15px;
+}
+
+// stack sections when on smaller devices
+
+.container-desktop {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.productDesktop__header {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.productDesktop__content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+// desktop styles - layout
+
+@media (min-width: $tablet) {
+    .container-desktop {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .productDesktop__header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // padding: 0 10px;
+    }
+
+    .productDesktop__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

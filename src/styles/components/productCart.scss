@@ -1,0 +1,52 @@
+.productCart {
+    background: $oe-dark-navy;
+    color: white;
+    padding: 20px 0 40px 0;
+}
+
+.productCart__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+}
+
+.productCart__price {
+    padding-top: 12px;
+    vertical-align: text-top;
+    font-weight: 700;
+    align-self: start;
+}
+
+
+.productCart__price__pounds {
+    font-size: 40px;
+}
+
+.productCart__price__pence {
+    font-size: 26px;
+    position: absolute;
+    margin-top: 5px;
+}
+
+.productCart__Quantity {
+    text-align: center;
+    justify-self: center;
+    button, h3 {
+        display: inline;
+    }
+    h3 {
+        color: $oe-blue;
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+}
+
+.productCart__Quantity__buttons {
+    h1 {
+        display: inline;
+        color: white;
+        padding: 0 8px;
+        font-size: 32px;
+    }
+    
+}
